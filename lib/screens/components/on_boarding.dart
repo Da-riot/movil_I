@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'ContentBoarding.dart';
 import 'package:first_app/pages/login.dart';
+import 'package:first_app/screens/sign_in.dart';
+
 
 
 class OnBoarding extends StatefulWidget {
@@ -101,7 +103,7 @@ class _OnBoardingState extends State<OnBoarding> {
                             if (currentePage == listBoarding.length - 1) {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (_) => Login()),
+                                MaterialPageRoute(builder: (_) => SignIn()),
                               );
                             }
                             currentePage = currentePage + 1;
